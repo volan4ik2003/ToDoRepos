@@ -3,23 +3,25 @@
 
 using namespace std;
 
+
+
 struct TodoItem
 {
-    int id;
-    string name;
-    string description;
-    string due_date;
+    int id = 0;
+    string name = " ";
+    string description = " ";
+    string due_date = " ";
 };
 
 struct TodoList
 {
-    int id;
-    string name;
-    TodoItem todoItems[];
+    int id = 0;
+    string name = " ";
+    TodoItem* todoItems = new TodoItem[];
 };
 
 int main()
 {
-   
+    TodoList list;
 }
 
